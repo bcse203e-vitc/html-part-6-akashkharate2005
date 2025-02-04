@@ -5,12 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = Number(prompt("Enter first number:"));
-let b = Number(prompt("Enter second number:"));
-a = a + b;
-b = a - b;
-a = a - b;
-alert("Swapped values: " + a + ", " + b);
+        let arr = prompt("Enter comma-separated numbers:").split(",");
+        alert("Without duplicates: " + [...new Set(arr)].join(", "));
     </script>
 </head>
 <body>

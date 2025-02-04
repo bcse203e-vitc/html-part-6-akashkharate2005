@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = Number(prompt("Enter first number:"));
-let b = Number(prompt("Enter second number:"));
-a = a + b;
-b = a - b;
-a = a - b;
-alert("Swapped values: " + a + ", " + b);
+        let charStr = prompt("Enter a string:");
+        let charCount = {};
+        for (let c of charStr) charCount[c] = (charCount[c] || 0) + 1;
+        alert("Character counts: " + JSON.stringify(charCount));
     </script>
 </head>
 <body>

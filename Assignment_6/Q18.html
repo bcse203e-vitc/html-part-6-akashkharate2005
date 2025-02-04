@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = Number(prompt("Enter first number:"));
-let b = Number(prompt("Enter second number:"));
-a = a + b;
-b = a - b;
-a = a - b;
-alert("Swapped values: " + a + ", " + b);
+        let nonRepeatStr = prompt("Enter a string:");
+        let nonRepeats = nonRepeatStr.split('').filter(c => nonRepeatStr.indexOf(c) === nonRepeatStr.lastIndexOf(c));
+        alert("Non-repeating characters: " + nonRepeats.join(", "));
     </script>
 </head>
 <body>

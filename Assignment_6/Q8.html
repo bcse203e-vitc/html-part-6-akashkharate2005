@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = Number(prompt("Enter first number:"));
-let b = Number(prompt("Enter second number:"));
-a = a + b;
-b = a - b;
-a = a - b;
-alert("Swapped values: " + a + ", " + b);
+        let g1 = Number(prompt("Enter first number:"));
+        let g2 = Number(prompt("Enter second number:"));
+        while (g2) {
+            [g1, g2] = [g2, g1 % g2];
+         }
+        alert("GCD: " + g1);
     </script>
 </head>
 <body>

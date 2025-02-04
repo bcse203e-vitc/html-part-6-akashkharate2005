@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let sortArr = prompt("Enter comma-separated numbers:").split(",").map(Number);
+        for (let i = 0; i < sortArr.length; i++) {
+            for (let j = i + 1; j < sortArr.length; j++) {
+                if (sortArr[i] > sortArr[j]) [sortArr[i], sortArr[j]] = [sortArr[j], sortArr[i]];
+            }
+        }
+        alert("Sorted array: " + sortArr.join(", "));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

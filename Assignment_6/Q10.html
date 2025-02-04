@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
-        let a = Number(prompt("Enter first number:"));
-let b = Number(prompt("Enter second number:"));
-a = a + b;
-b = a - b;
-a = a - b;
-alert("Swapped values: " + a + ", " + b);
+        let armNum = prompt("Enter a number:");
+let sum = 0;
+for (let char of armNum) sum += Math.pow(Number(char), armNum.length);
+alert(sum == armNum ? "Armstrong" : "Not Armstrong");
     </script>
 </head>
 <body>
